@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Organizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="planner-container">
+        <header class="planner-header">
+            <h1 class="planner-title">My Daily Organizer</h1>
+            <div class="date-controls">
+                <button id="prevDayBtn" class="nav-button"><span class="material-icons">arrow_back_ios</span></button>
+                <div class="current-date-display">
+                    <span id="displayDate">June 12, 2025</span>
+                    <input type="date" id="datePicker" class="hidden-date-input">
+                    <span class="material-icons calendar-icon">calendar_today</span>
+                </div>
+                <button id="nextDayBtn" class="nav-button"><span class="material-icons">arrow_forward_ios</span></button>
+            </div>
+            <div class="task-summary-new">
+                <span class="summary-item">Total: <span id="totalTasksCount">0</span></span>
+                <span class="summary-item">Completed: <span id="completedTasksCount">0</span></span>
+            </div>
+        </header>
+
+        <main class="schedule-grid" id="scheduleGrid">
+            </main>
+
+        <div class="general-add-task-area">
+            <input type="text" id="generalTaskInput" placeholder="Add a general task for today...">
+            <button id="generalAddTaskBtn" class="add-task-btn">
+                <span class="material-icons">playlist_add</span> Add General Task
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
